@@ -1,0 +1,9 @@
+<app-navbar-registered-user *ngIf="role==='ROLE_REGISTERED_USER'"></app-navbar-registered-user>
+<app-navbar-admin *ngIf="role==='ROLE_ADMIN'"></app-navbar-admin>
+<app-navbar-unregistered-user *ngIf="!role"></app-navbar-unregistered-user>
+
+
+
+<div layout="row" layout-fill layout-align="center center">
+<router-outlet (activate)="checkRole()"></router-outlet>
+</div>
