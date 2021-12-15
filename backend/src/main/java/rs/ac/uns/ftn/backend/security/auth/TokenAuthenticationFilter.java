@@ -16,8 +16,6 @@ import rs.ac.uns.ftn.backend.security.TokenUtils;
 
 
 
-//Filter koji ce presretati svaki zahtev klijenta ka serveru
-//Sem nad putanjama navedenim u WebSecurityConfig.configure(WebSecurity web)
 public class TokenAuthenticationFilter extends OncePerRequestFilter {
 
 	private TokenUtils tokenUtils;
